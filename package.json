@@ -1,0 +1,17 @@
+{
+  "name": "highland-leader-board",
+  "version": "0.1.0",
+  "description": "Scrapes athletic.net for Highland HS track meet results and renders a season leaderboard.",
+  "type": "module",
+  "scripts": {
+    "scrape": "node src/scrape.js",
+    "test": "node test/parse.test.js",
+    "preview": "python3 -m http.server 5173"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

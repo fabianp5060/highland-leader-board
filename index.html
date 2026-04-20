@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Highland Track &amp; Field — Leaderboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav id="top-nav" role="navigation">
+    <div class="nav-inner">
+      <span class="nav-brand">Highland Track &amp; Field '26</span>
+      <ul class="nav-links">
+        <li><button class="tab active" data-tab="leaderboard">Leaderboard</button></li>
+        <li><button class="tab" data-tab="meets">Meets</button></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header id="hero" role="banner">
+    <div class="meet-label">Highland High School</div>
+    <h1>Season Leaderboard</h1>
+    <div class="school-line" id="subtitle">2026 Outdoor Track &amp; Field</div>
+    <div class="date-line" id="updated">Loading…</div>
+    <span class="badge-pill">Top-8 · 10-8-6-5-4-3-2-1</span>
+  </header>
+
+  <main>
+    <section id="leaderboard" class="panel active">
+      <div class="section-header">
+        <h2>Top Scoring Athletes</h2>
+        <div class="controls">
+          <label>Gender
+            <select id="lb-gender">
+              <option value="all">All</option>
+              <option value="women">Women</option>
+              <option value="men">Men</option>
+            </select>
+          </label>
+          <span id="lb-meta" class="meta"></span>
+        </div>
+      </div>
+      <table id="lb-table">
+        <thead><tr><th>Rank</th><th>Athlete</th><th>Events</th><th>Points</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <section id="meets" class="panel">
+      <div class="section-header"><h2>Season Meets</h2></div>
+      <ol id="meet-list"></ol>
+      <div id="meet-detail"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <span>Data via <a href="https://athletic.net">athletic.net</a></span>
+      <span>Top-8 scored 10-8-6-5-4-3-2-1</span>
+    </div>
+  </footer>
+
+  <script src="app.js" type="module"></script>
+</body>
+</html>
