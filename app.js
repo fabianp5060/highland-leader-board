@@ -1,4 +1,4 @@
-const state = { data: null, tab: "leaderboard", gender: "all", selectedMeetId: null };
+const state = { data: null, tab: "leaderboard", gender: "all", kind: "all", selectedMeetId: null };
 
 async function load() {
   const res = await fetch("./results.json", { cache: "no-store" });
@@ -25,7 +25,9 @@ function allResults() {
 }
 
 function renderLeaderboard() {
-  const results = allResults().filter((r) => state.gender === "all" || r.gender === state.gender);
+  const results = allResults()
+    .filter((r) => state.gender === "all" || r.gender === state.gender)
+    .filter((r) => state.kind === "all" || r.meet.kind === state.kind);
   const byAthlete = new Map();
   for (const r of results) {
     const key = r.athleteId ?? r.athlete;
@@ -63,6 +65,7 @@ function renderMeets() {
     const li = document.createElement("li");
     li.className = "meet-card" + (m.meetId === state.selectedMeetId ? " active" : "");
     li.innerHTML = `
+      <div class="kind-badge kind-${m.kind ?? "invitational"}">${(m.kind ?? "invitational") === "jv" ? "JV" : "Invite"}</div>
       <h3>${escape(m.name)}</h3>
       <div class="date">${m.date ?? "Date TBD"}</div>
       <div class="count">${count} top-8 result${count === 1 ? "" : "s"}</div>`;
@@ -89,7 +92,7 @@ function renderMeetDetail() {
   const sorted = [...byEvent.entries()].sort(([a], [b]) => a.localeCompare(b));
   box.insertAdjacentHTML(
     "beforeend",
-    `<h2>${escape(m.name)}</h2>
+    `<h2>${escape(m.name)} <span class="kind-badge kind-${m.kind ?? "invitational"}">${(m.kind ?? "invitational") === "jv" ? "JV" : "Invite"}</span></h2>
      <div class="date-line">${m.date ?? ""}</div>
      <div><a class="external-link" href="https://www.athletic.net/TrackAndField/meet/${m.meetId}" target="_blank" rel="noopener">View on athletic.net ↗</a></div>`,
   );
@@ -129,6 +132,10 @@ document.querySelectorAll(".tab").forEach((t) =>
 );
 document.getElementById("lb-gender").addEventListener("change", (e) => {
   state.gender = e.target.value;
+  renderLeaderboard();
+});
+document.getElementById("lb-kind").addEventListener("change", (e) => {
+  state.kind = e.target.value;
   renderLeaderboard();
 });
 

@@ -10,6 +10,7 @@ import { fileURLToPath } from "node:url";
 
 import { EVENTS, pointsForPlace } from "../src/events.js";
 import { parseMeetPage, topEight } from "../src/parser.js";
+import { kindFor } from "../src/meet-kinds.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
@@ -48,7 +49,7 @@ const data = existsSync(DATA_FILE)
   : { team: { id: TEAM_ID, name: TEAM_NAME }, season: process.env.SEASON || "2026", meets: [] };
 
 data.meets = (data.meets || []).filter((m) => m.meetId !== meetId);
-data.meets.push({ meetId, name: meetName, date: meetDate || null, results });
+data.meets.push({ meetId, name: meetName, date: meetDate || null, kind: kindFor(meetId), results });
 data.meets.sort((a, b) => (a.date ?? "").localeCompare(b.date ?? ""));
 data.updatedAt = new Date().toISOString();
 

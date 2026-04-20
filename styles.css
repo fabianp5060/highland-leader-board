@@ -277,6 +277,7 @@ td .events {
   gap: 12px;
 }
 .meet-card {
+  position: relative;
   background: var(--white);
   border: 1.5px solid var(--gray-200);
   border-left: 4px solid var(--teal);
@@ -284,6 +285,38 @@ td .events {
   border-radius: 4px;
   cursor: pointer;
   transition: transform 0.1s, border-color 0.2s, box-shadow 0.2s;
+}
+
+.kind-badge {
+  display: inline-block;
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 2px 9px;
+  border-radius: 100px;
+  vertical-align: middle;
+  line-height: 1.6;
+}
+.kind-badge.kind-invitational {
+  background: var(--teal);
+  color: var(--white);
+}
+.kind-badge.kind-jv {
+  background: var(--gold);
+  color: var(--black);
+}
+.meet-card .kind-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+.meet-card h3 { padding-right: 56px; }
+#meet-detail h2 .kind-badge {
+  margin-left: 10px;
+  font-size: 0.7rem;
+  position: relative;
+  top: -3px;
 }
 .meet-card:hover {
   transform: translateY(-1px);

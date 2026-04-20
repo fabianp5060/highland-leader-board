@@ -238,7 +238,8 @@
           "points": 5,
           "url": "https://www.athletic.net/TrackAndField/meet/621738/results/f/1/tj"
         }
-      ]
+      ],
+      "kind": "invitational"
     },
     {
       "meetId": "622951",
@@ -1013,7 +1014,8 @@
           "points": 2,
           "url": "https://www.athletic.net/TrackAndField/meet/622951/results/f/1/lj"
         }
-      ]
+      ],
+      "kind": "jv"
     },
     {
       "meetId": "615526",
@@ -1500,7 +1502,8 @@
           "points": 3,
           "url": "https://www.athletic.net/TrackAndField/meet/615526/results/f/1/pv"
         }
-      ]
+      ],
+      "kind": "invitational"
     },
     {
       "meetId": "617065",
@@ -2023,13 +2026,15 @@
           "points": 6,
           "url": "https://www.athletic.net/TrackAndField/meet/617065/results/f/1/tj"
         }
-      ]
+      ],
+      "kind": "invitational"
     },
     {
       "meetId": "612127",
       "name": "Brooks Chandler Rotary Invitational Day One",
       "date": "2026-03-20",
-      "results": []
+      "results": [],
+      "kind": "invitational"
     },
     {
       "meetId": "644664",
@@ -2240,7 +2245,8 @@
           "points": 3,
           "url": "https://www.athletic.net/TrackAndField/meet/644664/results/f/2/pv"
         }
-      ]
+      ],
+      "kind": "invitational"
     },
     {
       "meetId": "624931",
@@ -3051,7 +3057,8 @@
           "points": 3,
           "url": "https://www.athletic.net/TrackAndField/meet/624931/results/f/1/tj"
         }
-      ]
+      ],
+      "kind": "jv"
     },
     {
       "meetId": "625484",
@@ -3646,7 +3653,8 @@
           "points": 10,
           "url": "https://www.athletic.net/TrackAndField/meet/625484/results/f/1/tj"
         }
-      ]
+      ],
+      "kind": "invitational"
     },
     {
       "meetId": "620031",
@@ -3833,7 +3841,8 @@
           "points": 5,
           "url": "https://www.athletic.net/TrackAndField/meet/620031/results/f/1/3200m"
         }
-      ]
+      ],
+      "kind": "invitational"
     },
     {
       "meetId": "622976",
@@ -4608,7 +4617,8 @@
           "points": 5,
           "url": "https://www.athletic.net/TrackAndField/meet/622976/results/f/1/tj"
         }
-      ]
+      ],
+      "kind": "jv"
     },
     {
       "meetId": "621634",
@@ -5083,7 +5093,8 @@
           "points": 10,
           "url": "https://www.athletic.net/TrackAndField/meet/621634/results/f/1/lj"
         }
-      ]
+      ],
+      "kind": "invitational"
     },
     {
       "meetId": "622978",
@@ -5810,13 +5821,15 @@
           "points": 1,
           "url": "https://www.athletic.net/TrackAndField/meet/622978/results/f/1/lj"
         }
-      ]
+      ],
+      "kind": "jv"
     },
     {
       "meetId": "617690",
       "name": "2026 Arcadia Invitational",
       "date": "2026-04-11",
-      "results": []
+      "results": [],
+      "kind": "invitational"
     },
     {
       "meetId": "620489",
@@ -5871,7 +5884,8 @@
           "points": 2,
           "url": "https://www.athletic.net/TrackAndField/meet/620489/results/f/1/3200m"
         }
-      ]
+      ],
+      "kind": "invitational"
     },
     {
       "meetId": "617063",
@@ -6130,7 +6144,8 @@
           "points": 6,
           "url": "https://www.athletic.net/TrackAndField/meet/617063/results/f/1/tj"
         }
-      ]
+      ],
+      "kind": "invitational"
     },
     {
       "meetId": "620144",
@@ -7409,7 +7424,8 @@
           "points": 3,
           "url": "https://www.athletic.net/TrackAndField/meet/620144/results/f/1/tj"
         }
-      ]
+      ],
+      "kind": "invitational"
     },
     {
       "meetId": "621665",
@@ -7596,25 +7612,29 @@
           "points": 1,
           "url": "https://www.athletic.net/TrackAndField/meet/621665/results/f/2/lj"
         }
-      ]
+      ],
+      "kind": "invitational"
     },
     {
       "meetId": "618992",
       "name": "Shaun Hardt True Grit Invitational",
       "date": "2026-04-24",
-      "results": []
+      "results": [],
+      "kind": "invitational"
     },
     {
       "meetId": "618991",
       "name": "East Valley Qualifier",
       "date": "2026-04-29",
-      "results": []
+      "results": [],
+      "kind": "invitational"
     },
     {
       "meetId": "625323",
       "name": "Nike Outdoor Nationals",
       "date": "2026-06-22",
-      "results": []
+      "results": [],
+      "kind": "invitational"
     }
   ],
   "updatedAt": "2026-04-20T17:29:58.812Z"

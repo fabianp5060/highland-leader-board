@@ -15,6 +15,7 @@ import { EVENTS, pointsForPlace } from "./events.js";
 import { parseMeetPage, topEight } from "./parser.js";
 import { scrapeMarkdown } from "./firecrawl.js";
 import { discoverMeetIds, fetchMeetMeta } from "./meets.js";
+import { kindFor } from "./meet-kinds.js";
 
 const EVENT_TYPE = new Map(EVENTS.map((e) => [e.code, e.type]));
 const EVENT_LABEL = new Map(EVENTS.map((e) => [e.code, e.label]));
@@ -97,15 +98,18 @@ async function main() {
     }
     console.log(`  ${meta.name} (${meta.date ?? "date unknown"})`);
 
+    const kind = kindFor(meetId);
+    console.log(`  kind: ${kind}`);
+
     // Skip future meets (no results yet).
     if (meta.date && new Date(meta.date) > new Date()) {
       console.log("  future meet — skipping results scrape");
-      existingById.set(meetId, { ...(prev ?? {}), ...meta, results: prev?.results ?? [] });
+      existingById.set(meetId, { ...(prev ?? {}), ...meta, kind, results: prev?.results ?? [] });
       continue;
     }
 
     const results = args.get("refresh-meets-only") && prev ? prev.results : await scrapeMeet(meetId, apiKey);
-    existingById.set(meetId, { ...meta, results });
+    existingById.set(meetId, { ...meta, kind, results });
     data.meets = Array.from(existingById.values());
     await saveData(data);
   }
