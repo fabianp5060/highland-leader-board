@@ -9,6 +9,7 @@
       "meetId": "621738",
       "name": "Thunder Invite",
       "date": "2026-02-27",
+      "kind": "invitational",
       "results": [
         {
           "event": "800 Meters",
@@ -238,13 +239,13 @@
           "points": 5,
           "url": "https://www.athletic.net/TrackAndField/meet/621738/results/f/1/tj"
         }
-      ],
-      "kind": "invitational"
+      ]
     },
     {
       "meetId": "622951",
       "name": "6-Way Meet @ Highland",
       "date": "2026-03-03",
+      "kind": "jv",
       "results": [
         {
           "event": "100 Meters",
@@ -1014,13 +1015,13 @@
           "points": 2,
           "url": "https://www.athletic.net/TrackAndField/meet/622951/results/f/1/lj"
         }
-      ],
-      "kind": "jv"
+      ]
     },
     {
       "meetId": "615526",
       "name": "Aztec Invitational",
       "date": "2026-03-07",
+      "kind": "invitational",
       "results": [
         {
           "event": "100 Meters",
@@ -1502,13 +1503,13 @@
           "points": 3,
           "url": "https://www.athletic.net/TrackAndField/meet/615526/results/f/1/pv"
         }
-      ],
-      "kind": "invitational"
+      ]
     },
     {
       "meetId": "617065",
       "name": "Red Mountain Rampage",
       "date": "2026-03-13",
+      "kind": "invitational",
       "results": [
         {
           "event": "100 Meters",
@@ -2026,20 +2027,20 @@
           "points": 6,
           "url": "https://www.athletic.net/TrackAndField/meet/617065/results/f/1/tj"
         }
-      ],
-      "kind": "invitational"
+      ]
     },
     {
       "meetId": "612127",
       "name": "Brooks Chandler Rotary Invitational Day One",
       "date": "2026-03-20",
-      "results": [],
-      "kind": "invitational"
+      "kind": "invitational",
+      "results": []
     },
     {
       "meetId": "644664",
       "name": "Brooks Chandler Rotary Day Two",
       "date": "2026-03-21",
+      "kind": "invitational",
       "results": [
         {
           "event": "100 Meters",
@@ -2245,13 +2246,13 @@
           "points": 3,
           "url": "https://www.athletic.net/TrackAndField/meet/644664/results/f/2/pv"
         }
-      ],
-      "kind": "invitational"
+      ]
     },
     {
       "meetId": "624931",
       "name": "Campo, Highland, Higley, Santan Charter HS @ Highland Hosted by ACP",
       "date": "2026-03-25",
+      "kind": "jv",
       "results": [
         {
           "event": "100 Meters",
@@ -2895,6 +2896,18 @@
           "gender": "women",
           "eventType": "field",
           "place": 4,
+          "athlete": "Lola Kerby",
+          "athleteId": "30380164",
+          "mark": "3' 10\"",
+          "points": 5,
+          "url": "https://www.athletic.net/TrackAndField/meet/624931/results/f/1/hj"
+        },
+        {
+          "event": "High Jump",
+          "eventCode": "hj",
+          "gender": "women",
+          "eventType": "field",
+          "place": 4,
           "athlete": "June Yates",
           "athleteId": "30380210",
           "mark": "3' 10\"",
@@ -2909,18 +2922,6 @@
           "place": 4,
           "athlete": "Emery Wright",
           "athleteId": "31013273",
-          "mark": "3' 10\"",
-          "points": 5,
-          "url": "https://www.athletic.net/TrackAndField/meet/624931/results/f/1/hj"
-        },
-        {
-          "event": "High Jump",
-          "eventCode": "hj",
-          "gender": "women",
-          "eventType": "field",
-          "place": 4,
-          "athlete": "Lola Kerby",
-          "athleteId": "30380164",
           "mark": "3' 10\"",
           "points": 5,
           "url": "https://www.athletic.net/TrackAndField/meet/624931/results/f/1/hj"
@@ -3057,13 +3058,13 @@
           "points": 3,
           "url": "https://www.athletic.net/TrackAndField/meet/624931/results/f/1/tj"
         }
-      ],
-      "kind": "jv"
+      ]
     },
     {
       "meetId": "625484",
       "name": "Toro Invite",
       "date": "2026-03-27",
+      "kind": "invitational",
       "results": [
         {
           "event": "100 Meters",
@@ -3611,8 +3612,8 @@
           "gender": "women",
           "eventType": "field",
           "place": 5,
-          "athlete": "Maryjane Broadbent",
-          "athleteId": "24508435",
+          "athlete": "Emilee Searle",
+          "athleteId": "24508493",
           "mark": "10-00.00",
           "points": 4,
           "url": "https://www.athletic.net/TrackAndField/meet/625484/results/f/1/pv"
@@ -3623,8 +3624,8 @@
           "gender": "women",
           "eventType": "field",
           "place": 5,
-          "athlete": "Emilee Searle",
-          "athleteId": "24508493",
+          "athlete": "Maryjane Broadbent",
+          "athleteId": "24508435",
           "mark": "10-00.00",
           "points": 4,
           "url": "https://www.athletic.net/TrackAndField/meet/625484/results/f/1/pv"
@@ -3653,13 +3654,13 @@
           "points": 10,
           "url": "https://www.athletic.net/TrackAndField/meet/625484/results/f/1/tj"
         }
-      ],
-      "kind": "invitational"
+      ]
     },
     {
       "meetId": "620031",
       "name": "Sentinel Invite - Southwest Distance Festival",
       "date": "2026-03-28",
+      "kind": "invitational",
       "results": [
         {
           "event": "800 Meters",
@@ -3841,13 +3842,13 @@
           "points": 5,
           "url": "https://www.athletic.net/TrackAndField/meet/620031/results/f/1/3200m"
         }
-      ],
-      "kind": "invitational"
+      ]
     },
     {
       "meetId": "622976",
       "name": "Campo Verde - Highland",
       "date": "2026-03-31",
+      "kind": "jv",
       "results": [
         {
           "event": "100 Meters",
@@ -4617,13 +4618,13 @@
           "points": 5,
           "url": "https://www.athletic.net/TrackAndField/meet/622976/results/f/1/tj"
         }
-      ],
-      "kind": "jv"
+      ]
     },
     {
       "meetId": "621634",
       "name": "Nightmare @ The Nest",
       "date": "2026-04-02",
+      "kind": "invitational",
       "results": [
         {
           "event": "100 Meters",
@@ -4799,8 +4800,8 @@
           "gender": "men",
           "eventType": "field",
           "place": 7,
-          "athlete": "Kellan Murray",
-          "athleteId": "30380176",
+          "athlete": "Timothy Crockett",
+          "athleteId": "27391058",
           "mark": "5-08.00",
           "points": 2,
           "url": "https://www.athletic.net/TrackAndField/meet/621634/results/m/1/hj"
@@ -4811,8 +4812,8 @@
           "gender": "men",
           "eventType": "field",
           "place": 7,
-          "athlete": "Timothy Crockett",
-          "athleteId": "27391058",
+          "athlete": "Kellan Murray",
+          "athleteId": "30380176",
           "mark": "5-08.00",
           "points": 2,
           "url": "https://www.athletic.net/TrackAndField/meet/621634/results/m/1/hj"
@@ -5093,13 +5094,13 @@
           "points": 10,
           "url": "https://www.athletic.net/TrackAndField/meet/621634/results/f/1/lj"
         }
-      ],
-      "kind": "invitational"
+      ]
     },
     {
       "meetId": "622978",
       "name": "Highland, Higley @ Campo Verde",
       "date": "2026-04-07",
+      "kind": "jv",
       "results": [
         {
           "event": "100 Meters",
@@ -5821,20 +5822,20 @@
           "points": 1,
           "url": "https://www.athletic.net/TrackAndField/meet/622978/results/f/1/lj"
         }
-      ],
-      "kind": "jv"
+      ]
     },
     {
       "meetId": "617690",
       "name": "2026 Arcadia Invitational",
       "date": "2026-04-11",
-      "results": [],
-      "kind": "invitational"
+      "kind": "invitational",
+      "results": []
     },
     {
       "meetId": "620489",
       "name": "Arcadia Invitational 2026",
       "date": "2026-04-11",
+      "kind": "invitational",
       "results": [
         {
           "event": "1500 Meters",
@@ -5884,13 +5885,13 @@
           "points": 2,
           "url": "https://www.athletic.net/TrackAndField/meet/620489/results/f/1/3200m"
         }
-      ],
-      "kind": "invitational"
+      ]
     },
     {
       "meetId": "617063",
       "name": "Top of the Mountain",
       "date": "2026-04-14",
+      "kind": "invitational",
       "results": [
         {
           "event": "200 Meters",
@@ -6144,13 +6145,13 @@
           "points": 6,
           "url": "https://www.athletic.net/TrackAndField/meet/617063/results/f/1/tj"
         }
-      ],
-      "kind": "invitational"
+      ]
     },
     {
       "meetId": "620144",
       "name": "GPS District Championship Featuring Rising Stars",
       "date": "2026-04-17",
+      "kind": "invitational",
       "results": [
         {
           "event": "60 Meter",
@@ -7424,13 +7425,13 @@
           "points": 3,
           "url": "https://www.athletic.net/TrackAndField/meet/620144/results/f/1/tj"
         }
-      ],
-      "kind": "invitational"
+      ]
     },
     {
       "meetId": "621665",
       "name": "Field of Dreams",
       "date": "2026-04-18",
+      "kind": "invitational",
       "results": [
         {
           "event": "Discus",
@@ -7612,15 +7613,1043 @@
           "points": 1,
           "url": "https://www.athletic.net/TrackAndField/meet/621665/results/f/2/lj"
         }
-      ],
-      "kind": "invitational"
+      ]
     },
     {
       "meetId": "618992",
       "name": "Shaun Hardt True Grit Invitational",
       "date": "2026-04-24",
-      "results": [],
-      "kind": "invitational"
+      "kind": "invitational",
+      "results": [
+        {
+          "event": "60 Meter",
+          "eventCode": "60m",
+          "gender": "men",
+          "eventType": "track",
+          "place": 2,
+          "athlete": "Brody Heussner",
+          "athleteId": "22045629",
+          "mark": "6.82a",
+          "points": 8,
+          "url": "https://www.athletic.net/TrackAndField/meet/618992/results/m/1/60m"
+        },
+        {
+          "event": "60 Meter",
+          "eventCode": "60m",
+          "gender": "men",
+          "eventType": "track",
+          "place": 5,
+          "athlete": "Maxwell Max Menden",
+          "athleteId": "24508470",
+          "mark": "6.95a",
+          "points": 4,
+          "url": "https://www.athletic.net/TrackAndField/meet/618992/results/m/1/60m"
+        },
+        {
+          "event": "100 Meters",
+          "eventCode": "100m",
+          "gender": "men",
+          "eventType": "track",
+          "place": 3,
+          "athlete": "Maxwell Max Menden",
+          "athleteId": "24508470",
+          "mark": "10.98a",
+          "points": 6,
+          "url": "https://www.athletic.net/TrackAndField/meet/618992/results/m/1/100m"
+        },
+        {
+          "event": "100 Meters",
+          "eventCode": "100m",
+          "gender": "men",
+          "eventType": "track",
+          "place": 8,
+          "athlete": "Devin Murray",
+          "athleteId": "24508475",
+          "mark": "11.07a",
+          "points": 1,
+          "url": "https://www.athletic.net/TrackAndField/meet/618992/results/m/1/100m"
+        },
+        {
+          "event": "200 Meters",
+          "eventCode": "200m",
+          "gender": "men",
+          "eventType": "track",
+          "place": 1,
+          "athlete": "Brody Heussner",
+          "athleteId": "22045629",
+          "mark": "21.75a",
+          "points": 10,
+          "url": "https://www.athletic.net/TrackAndField/meet/618992/results/m/1/200m"
+        },
+        {
+          "event": "200 Meters",
+          "eventCode": "200m",
+          "gender": "men",
+          "eventType": "track",
+          "place": 4,
+          "athlete": "Devin Murray",
+          "athleteId": "24508475",
+          "mark": "22.37a",
+          "points": 5,
+          "url": "https://www.athletic.net/TrackAndField/meet/618992/results/m/1/200m"
+        },
+        {
+          "event": "800 Meters",
+          "eventCode": "800m",
+          "gender": "men",
+          "eventType": "track",
+          "place": 5,
+          "athlete": "Brayden McLauchlin",
+          "athleteId": "30114633",
+          "mark": "2:00.17a",
+          "points": 4,
+          "url": "https://www.athletic.net/TrackAndField/meet/618992/results/m/1/800m"
+        },
+        {
+          "event": "1600 Meters",
+          "eventCode": "1600m",
+          "gender": "men",
+          "eventType": "track",
+          "place": 1,
+          "athlete": "Brandon Delancey",
+          "athleteId": "26441420",
+          "mark": "4:19.13a",
+          "points": 10,
+          "url": "https://www.athletic.net/TrackAndField/meet/618992/results/m/1/1600m"
+        },
+        {
+          "event": "1600 Meters",
+          "eventCode": "1600m",
+          "gender": "men",
+          "eventType": "track",
+          "place": 2,
+          "athlete": "Samuel Davis",
+          "athleteId": "27391061",
+          "mark": "4:21.60a",
+          "points": 8,
+          "url": "https://www.athletic.net/TrackAndField/meet/618992/results/m/1/1600m"
+        },
+        {
+          "event": "1600 Meters",
+          "eventCode": "1600m",
+          "gender": "men",
+          "eventType": "track",
+          "place": 3,
+          "athlete": "Easton Askew",
+          "athleteId": "30146560",
+          "mark": "4:23.03a",
+          "points": 6,
+          "url": "https://www.athletic.net/TrackAndField/meet/618992/results/m/1/1600m"
+        },
+        {
+          "event": "3200 Meters",
+          "eventCode": "3200m",
+          "gender": "men",
+          "eventType": "track",
+          "place": 5,
+          "athlete": "Ethan Nielsen",
+          "athleteId": "29362198",
+          "mark": "9:54.21a",
+          "points": 4,
+          "url": "https://www.athletic.net/TrackAndField/meet/618992/results/m/1/3200m"
+        },
+        {
+          "event": "3200 Meters",
+          "eventCode": "3200m",
+          "gender": "men",
+          "eventType": "track",
+          "place": 7,
+          "athlete": "Mason Ostermeyer",
+          "athleteId": "30191919",
+          "mark": "10:02.72a",
+          "points": 2,
+          "url": "https://www.athletic.net/TrackAndField/meet/618992/results/m/1/3200m"
+        },
+        {
+          "event": "300m Hurdles",
+          "eventCode": "300mh",
+          "gender": "men",
+          "eventType": "track",
+          "place": 3,
+          "athlete": "Colton Lueck",
+          "athleteId": "21217674",
+          "mark": "40.99a",
+          "points": 6,
+          "url": "https://www.athletic.net/TrackAndField/meet/618992/results/m/1/300mh"
+        },
+        {
+          "event": "Discus",
+          "eventCode": "discus",
+          "gender": "men",
+          "eventType": "field",
+          "place": 6,
+          "athlete": "Trenten Reedy",
+          "athleteId": "27391082",
+          "mark": "142-01",
+          "points": 3,
+          "url": "https://www.athletic.net/TrackAndField/meet/618992/results/m/1/discus"
+        },
+        {
+          "event": "High Jump",
+          "eventCode": "hj",
+          "gender": "men",
+          "eventType": "field",
+          "place": 2,
+          "athlete": "Timothy Crockett",
+          "athleteId": "27391058",
+          "mark": "6-00.00",
+          "points": 8,
+          "url": "https://www.athletic.net/TrackAndField/meet/618992/results/m/1/hj"
+        },
+        {
+          "event": "Long Jump",
+          "eventCode": "lj",
+          "gender": "men",
+          "eventType": "field",
+          "place": 5,
+          "athlete": "Kellan Murray",
+          "athleteId": "30380176",
+          "mark": "21-07.00",
+          "points": 4,
+          "url": "https://www.athletic.net/TrackAndField/meet/618992/results/m/1/lj"
+        },
+        {
+          "event": "Triple Jump",
+          "eventCode": "tj",
+          "gender": "men",
+          "eventType": "field",
+          "place": 3,
+          "athlete": "Atlas Anderson",
+          "athleteId": "24633132",
+          "mark": "42-01.25",
+          "points": 6,
+          "url": "https://www.athletic.net/TrackAndField/meet/618992/results/m/1/tj"
+        },
+        {
+          "event": "400 Meters",
+          "eventCode": "400m",
+          "gender": "women",
+          "eventType": "track",
+          "place": 2,
+          "athlete": "Camryn Delancey",
+          "athleteId": "21218324",
+          "mark": "57.47a",
+          "points": 8,
+          "url": "https://www.athletic.net/TrackAndField/meet/618992/results/f/1/400m"
+        },
+        {
+          "event": "800 Meters",
+          "eventCode": "800m",
+          "gender": "women",
+          "eventType": "track",
+          "place": 1,
+          "athlete": "Ariana Hurtado",
+          "athleteId": "29324798",
+          "mark": "2:18.93a",
+          "points": 10,
+          "url": "https://www.athletic.net/TrackAndField/meet/618992/results/f/1/800m"
+        },
+        {
+          "event": "800 Meters",
+          "eventCode": "800m",
+          "gender": "women",
+          "eventType": "track",
+          "place": 5,
+          "athlete": "Ella Bonnette",
+          "athleteId": "30117672",
+          "mark": "2:23.27a",
+          "points": 4,
+          "url": "https://www.athletic.net/TrackAndField/meet/618992/results/f/1/800m"
+        },
+        {
+          "event": "800 Meters",
+          "eventCode": "800m",
+          "gender": "women",
+          "eventType": "track",
+          "place": 6,
+          "athlete": "Katelyn Anderson",
+          "athleteId": "30117671",
+          "mark": "2:23.28a",
+          "points": 3,
+          "url": "https://www.athletic.net/TrackAndField/meet/618992/results/f/1/800m"
+        },
+        {
+          "event": "1600 Meters",
+          "eventCode": "1600m",
+          "gender": "women",
+          "eventType": "track",
+          "place": 1,
+          "athlete": "Audra Huempfner",
+          "athleteId": "30146258",
+          "mark": "5:00.32a",
+          "points": 10,
+          "url": "https://www.athletic.net/TrackAndField/meet/618992/results/f/1/1600m"
+        },
+        {
+          "event": "1600 Meters",
+          "eventCode": "1600m",
+          "gender": "women",
+          "eventType": "track",
+          "place": 3,
+          "athlete": "Camryn Delancey",
+          "athleteId": "21218324",
+          "mark": "5:02.03a",
+          "points": 6,
+          "url": "https://www.athletic.net/TrackAndField/meet/618992/results/f/1/1600m"
+        },
+        {
+          "event": "1600 Meters",
+          "eventCode": "1600m",
+          "gender": "women",
+          "eventType": "track",
+          "place": 6,
+          "athlete": "Natalia Morris",
+          "athleteId": "26441570",
+          "mark": "5:16.03a",
+          "points": 3,
+          "url": "https://www.athletic.net/TrackAndField/meet/618992/results/f/1/1600m"
+        },
+        {
+          "event": "3200 Meters",
+          "eventCode": "3200m",
+          "gender": "women",
+          "eventType": "track",
+          "place": 5,
+          "athlete": "Lily Oplinger",
+          "athleteId": "30117673",
+          "mark": "12:01.34a",
+          "points": 4,
+          "url": "https://www.athletic.net/TrackAndField/meet/618992/results/f/1/3200m"
+        },
+        {
+          "event": "3200 Meters",
+          "eventCode": "3200m",
+          "gender": "women",
+          "eventType": "track",
+          "place": 7,
+          "athlete": "Taylor Wilde",
+          "athleteId": "30380208",
+          "mark": "12:07.34a",
+          "points": 2,
+          "url": "https://www.athletic.net/TrackAndField/meet/618992/results/f/1/3200m"
+        },
+        {
+          "event": "100m Hurdles",
+          "eventCode": "100mh",
+          "gender": "women",
+          "eventType": "track",
+          "place": 2,
+          "athlete": "Brenli McEuen",
+          "athleteId": "24544720",
+          "mark": "15.46a",
+          "points": 8,
+          "url": "https://www.athletic.net/TrackAndField/meet/618992/results/f/1/100mh"
+        },
+        {
+          "event": "100m Hurdles",
+          "eventCode": "100mh",
+          "gender": "women",
+          "eventType": "track",
+          "place": 3,
+          "athlete": "Kate Hester",
+          "athleteId": "30205435",
+          "mark": "15.58a",
+          "points": 6,
+          "url": "https://www.athletic.net/TrackAndField/meet/618992/results/f/1/100mh"
+        },
+        {
+          "event": "300m Hurdles",
+          "eventCode": "300mh",
+          "gender": "women",
+          "eventType": "track",
+          "place": 2,
+          "athlete": "Kate Hester",
+          "athleteId": "30205435",
+          "mark": "47.70a",
+          "points": 8,
+          "url": "https://www.athletic.net/TrackAndField/meet/618992/results/f/1/300mh"
+        },
+        {
+          "event": "300m Hurdles",
+          "eventCode": "300mh",
+          "gender": "women",
+          "eventType": "track",
+          "place": 6,
+          "athlete": "Brenli McEuen",
+          "athleteId": "24544720",
+          "mark": "50.12a",
+          "points": 3,
+          "url": "https://www.athletic.net/TrackAndField/meet/618992/results/f/1/300mh"
+        },
+        {
+          "event": "Shot Put",
+          "eventCode": "shot",
+          "gender": "women",
+          "eventType": "field",
+          "place": 4,
+          "athlete": "Lolena Vea",
+          "athleteId": "27391142",
+          "mark": "33-11.50",
+          "points": 5,
+          "url": "https://www.athletic.net/TrackAndField/meet/618992/results/f/1/shot"
+        },
+        {
+          "event": "Javelin",
+          "eventCode": "javelin",
+          "gender": "women",
+          "eventType": "field",
+          "place": 3,
+          "athlete": "Ela Witcher",
+          "athleteId": "30470548",
+          "mark": "106-06",
+          "points": 6,
+          "url": "https://www.athletic.net/TrackAndField/meet/618992/results/f/1/javelin"
+        },
+        {
+          "event": "High Jump",
+          "eventCode": "hj",
+          "gender": "women",
+          "eventType": "field",
+          "place": 1,
+          "athlete": "Janie Brower",
+          "athleteId": "24508436",
+          "mark": "5-03.00",
+          "points": 10,
+          "url": "https://www.athletic.net/TrackAndField/meet/618992/results/f/1/hj"
+        },
+        {
+          "event": "Pole Vault",
+          "eventCode": "pv",
+          "gender": "women",
+          "eventType": "field",
+          "place": 3,
+          "athlete": "Maibri Bland",
+          "athleteId": "22045635",
+          "mark": "11-06.00",
+          "points": 6,
+          "url": "https://www.athletic.net/TrackAndField/meet/618992/results/f/1/pv"
+        },
+        {
+          "event": "Pole Vault",
+          "eventCode": "pv",
+          "gender": "women",
+          "eventType": "field",
+          "place": 4,
+          "athlete": "Maryjane Broadbent",
+          "athleteId": "24508435",
+          "mark": "10-09.00",
+          "points": 5,
+          "url": "https://www.athletic.net/TrackAndField/meet/618992/results/f/1/pv"
+        },
+        {
+          "event": "Pole Vault",
+          "eventCode": "pv",
+          "gender": "women",
+          "eventType": "field",
+          "place": 7,
+          "athlete": "Demi Valenzuela",
+          "athleteId": "30380204",
+          "mark": "10-06.00",
+          "points": 2,
+          "url": "https://www.athletic.net/TrackAndField/meet/618992/results/f/1/pv"
+        },
+        {
+          "event": "Long Jump",
+          "eventCode": "lj",
+          "gender": "women",
+          "eventType": "field",
+          "place": 3,
+          "athlete": "Janie Brower",
+          "athleteId": "24508436",
+          "mark": "16-00.00",
+          "points": 6,
+          "url": "https://www.athletic.net/TrackAndField/meet/618992/results/f/1/lj"
+        }
+      ]
+    },
+    {
+      "meetId": "640518",
+      "name": "VC Last Chance",
+      "date": "2026-04-28",
+      "kind": "invitational",
+      "results": [
+        {
+          "event": "100 Meters",
+          "eventCode": "100m",
+          "gender": "men",
+          "eventType": "track",
+          "place": 1,
+          "athlete": "Devin Murray",
+          "athleteId": "24508475",
+          "mark": "11.11a",
+          "points": 10,
+          "url": "https://www.athletic.net/TrackAndField/meet/640518/results/m/1/100m"
+        },
+        {
+          "event": "100 Meters",
+          "eventCode": "100m",
+          "gender": "men",
+          "eventType": "track",
+          "place": 6,
+          "athlete": "Gavin Fortier",
+          "athleteId": "23594346",
+          "mark": "11.37a",
+          "points": 3,
+          "url": "https://www.athletic.net/TrackAndField/meet/640518/results/m/1/100m"
+        },
+        {
+          "event": "200 Meters",
+          "eventCode": "200m",
+          "gender": "men",
+          "eventType": "track",
+          "place": 1,
+          "athlete": "Maxwell Max Menden",
+          "athleteId": "24508470",
+          "mark": "22.08a",
+          "points": 10,
+          "url": "https://www.athletic.net/TrackAndField/meet/640518/results/m/1/200m"
+        },
+        {
+          "event": "400 Meters",
+          "eventCode": "400m",
+          "gender": "men",
+          "eventType": "track",
+          "place": 1,
+          "athlete": "Brody Heussner",
+          "athleteId": "22045629",
+          "mark": "49.23a",
+          "points": 10,
+          "url": "https://www.athletic.net/TrackAndField/meet/640518/results/m/1/400m"
+        },
+        {
+          "event": "400 Meters",
+          "eventCode": "400m",
+          "gender": "men",
+          "eventType": "track",
+          "place": 5,
+          "athlete": "Brayden McLauchlin",
+          "athleteId": "30114633",
+          "mark": "53.08a",
+          "points": 4,
+          "url": "https://www.athletic.net/TrackAndField/meet/640518/results/m/1/400m"
+        },
+        {
+          "event": "800 Meters",
+          "eventCode": "800m",
+          "gender": "men",
+          "eventType": "track",
+          "place": 2,
+          "athlete": "Phineas Zlotoff",
+          "athleteId": "30146259",
+          "mark": "1:59.48a",
+          "points": 8,
+          "url": "https://www.athletic.net/TrackAndField/meet/640518/results/m/1/800m"
+        },
+        {
+          "event": "800 Meters",
+          "eventCode": "800m",
+          "gender": "men",
+          "eventType": "track",
+          "place": 3,
+          "athlete": "Easton Askew",
+          "athleteId": "30146560",
+          "mark": "2:01.31a",
+          "points": 6,
+          "url": "https://www.athletic.net/TrackAndField/meet/640518/results/m/1/800m"
+        },
+        {
+          "event": "1600 Meters",
+          "eventCode": "1600m",
+          "gender": "men",
+          "eventType": "track",
+          "place": 1,
+          "athlete": "Lester (L.J.) Johns...",
+          "athleteId": "22994098",
+          "mark": "4:31.59a",
+          "points": 10,
+          "url": "https://www.athletic.net/TrackAndField/meet/640518/results/m/1/1600m"
+        },
+        {
+          "event": "3200 Meters",
+          "eventCode": "3200m",
+          "gender": "men",
+          "eventType": "track",
+          "place": 1,
+          "athlete": "Samuel Davis",
+          "athleteId": "27391061",
+          "mark": "9:35.68a",
+          "points": 10,
+          "url": "https://www.athletic.net/TrackAndField/meet/640518/results/m/1/3200m"
+        },
+        {
+          "event": "3200 Meters",
+          "eventCode": "3200m",
+          "gender": "men",
+          "eventType": "track",
+          "place": 2,
+          "athlete": "Ethan Nielsen",
+          "athleteId": "29362198",
+          "mark": "9:42.77a",
+          "points": 8,
+          "url": "https://www.athletic.net/TrackAndField/meet/640518/results/m/1/3200m"
+        },
+        {
+          "event": "3200 Meters",
+          "eventCode": "3200m",
+          "gender": "men",
+          "eventType": "track",
+          "place": 3,
+          "athlete": "Mason Ostermeyer",
+          "athleteId": "30191919",
+          "mark": "9:57.44a",
+          "points": 6,
+          "url": "https://www.athletic.net/TrackAndField/meet/640518/results/m/1/3200m"
+        },
+        {
+          "event": "3200 Meters",
+          "eventCode": "3200m",
+          "gender": "men",
+          "eventType": "track",
+          "place": 4,
+          "athlete": "Lester (L.J.) Johns...",
+          "athleteId": "22994098",
+          "mark": "10:12.13a",
+          "points": 5,
+          "url": "https://www.athletic.net/TrackAndField/meet/640518/results/m/1/3200m"
+        },
+        {
+          "event": "110m Hurdles",
+          "eventCode": "110mh",
+          "gender": "men",
+          "eventType": "track",
+          "place": 3,
+          "athlete": "Colton Lueck",
+          "athleteId": "21217674",
+          "mark": "15.96a",
+          "points": 6,
+          "url": "https://www.athletic.net/TrackAndField/meet/640518/results/m/1/110mh"
+        },
+        {
+          "event": "110m Hurdles",
+          "eventCode": "110mh",
+          "gender": "men",
+          "eventType": "track",
+          "place": 4,
+          "athlete": "Spencer Breinholt",
+          "athleteId": "30243223",
+          "mark": "16.82a",
+          "points": 5,
+          "url": "https://www.athletic.net/TrackAndField/meet/640518/results/m/1/110mh"
+        },
+        {
+          "event": "300m Hurdles",
+          "eventCode": "300mh",
+          "gender": "men",
+          "eventType": "track",
+          "place": 2,
+          "athlete": "Colton Lueck",
+          "athleteId": "21217674",
+          "mark": "40.65a",
+          "points": 8,
+          "url": "https://www.athletic.net/TrackAndField/meet/640518/results/m/1/300mh"
+        },
+        {
+          "event": "300m Hurdles",
+          "eventCode": "300mh",
+          "gender": "men",
+          "eventType": "track",
+          "place": 4,
+          "athlete": "Spencer Breinholt",
+          "athleteId": "30243223",
+          "mark": "41.48a",
+          "points": 5,
+          "url": "https://www.athletic.net/TrackAndField/meet/640518/results/m/1/300mh"
+        },
+        {
+          "event": "Discus",
+          "eventCode": "discus",
+          "gender": "men",
+          "eventType": "field",
+          "place": 1,
+          "athlete": "Trenten Reedy",
+          "athleteId": "27391082",
+          "mark": "143-10",
+          "points": 10,
+          "url": "https://www.athletic.net/TrackAndField/meet/640518/results/m/1/discus"
+        },
+        {
+          "event": "Discus",
+          "eventCode": "discus",
+          "gender": "men",
+          "eventType": "field",
+          "place": 2,
+          "athlete": "Hayden Parrish",
+          "athleteId": "27391080",
+          "mark": "131-11",
+          "points": 8,
+          "url": "https://www.athletic.net/TrackAndField/meet/640518/results/m/1/discus"
+        },
+        {
+          "event": "Discus",
+          "eventCode": "discus",
+          "gender": "men",
+          "eventType": "field",
+          "place": 5,
+          "athlete": "Cecil Beckford",
+          "athleteId": "24507828",
+          "mark": "112-10",
+          "points": 4,
+          "url": "https://www.athletic.net/TrackAndField/meet/640518/results/m/1/discus"
+        },
+        {
+          "event": "Javelin",
+          "eventCode": "javelin",
+          "gender": "men",
+          "eventType": "field",
+          "place": 1,
+          "athlete": "Brennen Palmer",
+          "athleteId": "28026718",
+          "mark": "152-04.50",
+          "points": 10,
+          "url": "https://www.athletic.net/TrackAndField/meet/640518/results/m/1/javelin"
+        },
+        {
+          "event": "High Jump",
+          "eventCode": "hj",
+          "gender": "men",
+          "eventType": "field",
+          "place": 1,
+          "athlete": "Timothy Crockett",
+          "athleteId": "27391058",
+          "mark": "6-01.00",
+          "points": 10,
+          "url": "https://www.athletic.net/TrackAndField/meet/640518/results/m/1/hj"
+        },
+        {
+          "event": "High Jump",
+          "eventCode": "hj",
+          "gender": "men",
+          "eventType": "field",
+          "place": 2,
+          "athlete": "Kellan Murray",
+          "athleteId": "30380176",
+          "mark": "5-09.00",
+          "points": 8,
+          "url": "https://www.athletic.net/TrackAndField/meet/640518/results/m/1/hj"
+        },
+        {
+          "event": "Long Jump",
+          "eventCode": "lj",
+          "gender": "men",
+          "eventType": "field",
+          "place": 1,
+          "athlete": "Kellan Murray",
+          "athleteId": "30380176",
+          "mark": "20-02.50",
+          "points": 10,
+          "url": "https://www.athletic.net/TrackAndField/meet/640518/results/m/1/lj"
+        },
+        {
+          "event": "Long Jump",
+          "eventCode": "lj",
+          "gender": "men",
+          "eventType": "field",
+          "place": 3,
+          "athlete": "Isaiah Crockett",
+          "athleteId": "27391057",
+          "mark": "20-00.00",
+          "points": 6,
+          "url": "https://www.athletic.net/TrackAndField/meet/640518/results/m/1/lj"
+        },
+        {
+          "event": "Long Jump",
+          "eventCode": "lj",
+          "gender": "men",
+          "eventType": "field",
+          "place": 6,
+          "athlete": "Atlas Anderson",
+          "athleteId": "24633132",
+          "mark": "19-08.50",
+          "points": 3,
+          "url": "https://www.athletic.net/TrackAndField/meet/640518/results/m/1/lj"
+        },
+        {
+          "event": "Triple Jump",
+          "eventCode": "tj",
+          "gender": "men",
+          "eventType": "field",
+          "place": 4,
+          "athlete": "Atlas Anderson",
+          "athleteId": "24633132",
+          "mark": "40-02.00",
+          "points": 5,
+          "url": "https://www.athletic.net/TrackAndField/meet/640518/results/m/1/tj"
+        },
+        {
+          "event": "200 Meters",
+          "eventCode": "200m",
+          "gender": "women",
+          "eventType": "track",
+          "place": 1,
+          "athlete": "Addyson Lowe",
+          "athleteId": "24508283",
+          "mark": "26.33a",
+          "points": 10,
+          "url": "https://www.athletic.net/TrackAndField/meet/640518/results/f/1/200m"
+        },
+        {
+          "event": "400 Meters",
+          "eventCode": "400m",
+          "gender": "women",
+          "eventType": "track",
+          "place": 1,
+          "athlete": "Ariana Hurtado",
+          "athleteId": "29324798",
+          "mark": "59.64a",
+          "points": 10,
+          "url": "https://www.athletic.net/TrackAndField/meet/640518/results/f/1/400m"
+        },
+        {
+          "event": "400 Meters",
+          "eventCode": "400m",
+          "gender": "women",
+          "eventType": "track",
+          "place": 3,
+          "athlete": "Ella Bonnette",
+          "athleteId": "30117672",
+          "mark": "1:01.14a",
+          "points": 6,
+          "url": "https://www.athletic.net/TrackAndField/meet/640518/results/f/1/400m"
+        },
+        {
+          "event": "400 Meters",
+          "eventCode": "400m",
+          "gender": "women",
+          "eventType": "track",
+          "place": 4,
+          "athlete": "Katelyn Anderson",
+          "athleteId": "30117671",
+          "mark": "1:01.59a",
+          "points": 5,
+          "url": "https://www.athletic.net/TrackAndField/meet/640518/results/f/1/400m"
+        },
+        {
+          "event": "800 Meters",
+          "eventCode": "800m",
+          "gender": "women",
+          "eventType": "track",
+          "place": 2,
+          "athlete": "Natalia Morris",
+          "athleteId": "26441570",
+          "mark": "2:20.31a",
+          "points": 8,
+          "url": "https://www.athletic.net/TrackAndField/meet/640518/results/f/1/800m"
+        },
+        {
+          "event": "3200 Meters",
+          "eventCode": "3200m",
+          "gender": "women",
+          "eventType": "track",
+          "place": 2,
+          "athlete": "Lily Oplinger",
+          "athleteId": "30117673",
+          "mark": "11:51.31a",
+          "points": 8,
+          "url": "https://www.athletic.net/TrackAndField/meet/640518/results/f/1/3200m"
+        },
+        {
+          "event": "3200 Meters",
+          "eventCode": "3200m",
+          "gender": "women",
+          "eventType": "track",
+          "place": 3,
+          "athlete": "Taylor Wilde",
+          "athleteId": "30380208",
+          "mark": "11:52.95a",
+          "points": 6,
+          "url": "https://www.athletic.net/TrackAndField/meet/640518/results/f/1/3200m"
+        },
+        {
+          "event": "100m Hurdles",
+          "eventCode": "100mh",
+          "gender": "women",
+          "eventType": "track",
+          "place": 1,
+          "athlete": "Brenli McEuen",
+          "athleteId": "24544720",
+          "mark": "15.35a",
+          "points": 10,
+          "url": "https://www.athletic.net/TrackAndField/meet/640518/results/f/1/100mh"
+        },
+        {
+          "event": "100m Hurdles",
+          "eventCode": "100mh",
+          "gender": "women",
+          "eventType": "track",
+          "place": 2,
+          "athlete": "Kacey Curry",
+          "athleteId": "30380144",
+          "mark": "16.76a",
+          "points": 8,
+          "url": "https://www.athletic.net/TrackAndField/meet/640518/results/f/1/100mh"
+        },
+        {
+          "event": "300m Hurdles",
+          "eventCode": "300mh",
+          "gender": "women",
+          "eventType": "track",
+          "place": 1,
+          "athlete": "Brenli McEuen",
+          "athleteId": "24544720",
+          "mark": "48.03a",
+          "points": 10,
+          "url": "https://www.athletic.net/TrackAndField/meet/640518/results/f/1/300mh"
+        },
+        {
+          "event": "300m Hurdles",
+          "eventCode": "300mh",
+          "gender": "women",
+          "eventType": "track",
+          "place": 2,
+          "athlete": "Meghan Rappaport",
+          "athleteId": "27391133",
+          "mark": "50.10a",
+          "points": 8,
+          "url": "https://www.athletic.net/TrackAndField/meet/640518/results/f/1/300mh"
+        },
+        {
+          "event": "300m Hurdles",
+          "eventCode": "300mh",
+          "gender": "women",
+          "eventType": "track",
+          "place": 4,
+          "athlete": "Kacey Curry",
+          "athleteId": "30380144",
+          "mark": "52.37a",
+          "points": 5,
+          "url": "https://www.athletic.net/TrackAndField/meet/640518/results/f/1/300mh"
+        },
+        {
+          "event": "Shot Put",
+          "eventCode": "shot",
+          "gender": "women",
+          "eventType": "field",
+          "place": 1,
+          "athlete": "Lolena Vea",
+          "athleteId": "27391142",
+          "mark": "35-02.00",
+          "points": 10,
+          "url": "https://www.athletic.net/TrackAndField/meet/640518/results/f/1/shot"
+        },
+        {
+          "event": "Discus",
+          "eventCode": "discus",
+          "gender": "women",
+          "eventType": "field",
+          "place": 1,
+          "athlete": "Lolena Vea",
+          "athleteId": "27391142",
+          "mark": "96-01",
+          "points": 10,
+          "url": "https://www.athletic.net/TrackAndField/meet/640518/results/f/1/discus"
+        },
+        {
+          "event": "High Jump",
+          "eventCode": "hj",
+          "gender": "women",
+          "eventType": "field",
+          "place": 1,
+          "athlete": "Demi Valenzuela",
+          "athleteId": "30380204",
+          "mark": "4-09.00",
+          "points": 10,
+          "url": "https://www.athletic.net/TrackAndField/meet/640518/results/f/1/hj"
+        },
+        {
+          "event": "High Jump",
+          "eventCode": "hj",
+          "gender": "women",
+          "eventType": "field",
+          "place": 7,
+          "athlete": "Aderies Anderson",
+          "athleteId": "30380132",
+          "mark": "4-03.00",
+          "points": 2,
+          "url": "https://www.athletic.net/TrackAndField/meet/640518/results/f/1/hj"
+        },
+        {
+          "event": "Pole Vault",
+          "eventCode": "pv",
+          "gender": "women",
+          "eventType": "field",
+          "place": 6,
+          "athlete": "Abigail Ritchie",
+          "athleteId": "27391134",
+          "mark": "9-04.00",
+          "points": 3,
+          "url": "https://www.athletic.net/TrackAndField/meet/640518/results/f/1/pv"
+        },
+        {
+          "event": "Long Jump",
+          "eventCode": "lj",
+          "gender": "women",
+          "eventType": "field",
+          "place": 1,
+          "athlete": "Janie Brower",
+          "athleteId": "24508436",
+          "mark": "17-02.25",
+          "points": 10,
+          "url": "https://www.athletic.net/TrackAndField/meet/640518/results/f/1/lj"
+        },
+        {
+          "event": "Long Jump",
+          "eventCode": "lj",
+          "gender": "women",
+          "eventType": "field",
+          "place": 5,
+          "athlete": "Brooklyn Roberts",
+          "athleteId": "22045630",
+          "mark": "14-06.00",
+          "points": 4,
+          "url": "https://www.athletic.net/TrackAndField/meet/640518/results/f/1/lj"
+        },
+        {
+          "event": "Long Jump",
+          "eventCode": "lj",
+          "gender": "women",
+          "eventType": "field",
+          "place": 8,
+          "athlete": "Emery Wright",
+          "athleteId": "31013273",
+          "mark": "14-02.00",
+          "points": 1,
+          "url": "https://www.athletic.net/TrackAndField/meet/640518/results/f/1/lj"
+        },
+        {
+          "event": "Long Jump",
+          "eventCode": "lj",
+          "gender": "women",
+          "eventType": "field",
+          "place": 8,
+          "athlete": "Sayla Salima",
+          "athleteId": "30380192",
+          "mark": "14-02.00",
+          "points": 1,
+          "url": "https://www.athletic.net/TrackAndField/meet/640518/results/f/1/lj"
+        },
+        {
+          "event": "Triple Jump",
+          "eventCode": "tj",
+          "gender": "women",
+          "eventType": "field",
+          "place": 8,
+          "athlete": "Elyse Hansen",
+          "athleteId": "27391118",
+          "mark": "28-05.00",
+          "points": 1,
+          "url": "https://www.athletic.net/TrackAndField/meet/640518/results/f/1/tj"
+        }
+      ]
     },
     {
       "meetId": "618991",
@@ -7637,5 +8666,5 @@
       "kind": "invitational"
     }
   ],
-  "updatedAt": "2026-04-20T17:29:58.812Z"
+  "updatedAt": "2026-04-30T16:53:09.457Z"
 }
