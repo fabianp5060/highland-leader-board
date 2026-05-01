@@ -11,8 +11,8 @@ import { dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import "dotenv/config";
 
-import { EVENTS, pointsForPlace } from "./events.js";
-import { parseMeetPage, topEight } from "./parser.js";
+import { EVENTS, pointsForPlace, eventUrl } from "./events.js";
+import { parseEventPage, parseMeetPage, topEight } from "./parser.js";
 import { scrapeMarkdown } from "./firecrawl.js";
 import { discoverMeetIds, fetchMeetMeta } from "./meets.js";
 import { kindFor } from "./meet-kinds.js";
@@ -50,7 +50,7 @@ async function scrapeMeet(meetId, apiKey) {
   const url = `https://www.athletic.net/TrackAndField/meet/${meetId}/results/all`;
   const md = await scrapeMarkdown(url, { apiKey, waitFor: 3500 });
   const placings = topEight(parseMeetPage(md, { teamId: TEAM_ID, teamName: TEAM_NAME }));
-  return placings.map((p) => ({
+  const results = placings.map((p) => ({
     event: EVENT_LABEL.get(p.code) ?? p.label,
     eventCode: p.code,
     gender: p.gender,
@@ -58,10 +58,80 @@ async function scrapeMeet(meetId, apiKey) {
     place: p.place,
     athlete: p.athlete,
     athleteId: p.athleteId,
+    athletes: p.athletes ?? null,
     mark: p.mark,
     points: pointsForPlace(p.place),
     url: `https://www.athletic.net/TrackAndField/meet/${p.meetId}/results/${p.gender === "men" ? "m" : "f"}/${p.division}/${p.code}`,
   }));
+  await mergeRelaysFromEventPages(meetId, results, md, apiKey);
+  return results;
+}
+
+// On /results/all relay placements live inside a nested table that doesn't
+// roundtrip cleanly to markdown — Firecrawl drops the relay rows, so the meet
+// page parser produces nothing for relays. For each relay event referenced by a
+// link in the /results/all markdown, fetch the per-event page (which uses a
+// flatter "place / team / time / four athletes" layout) and merge any Highland
+// placements we find back into the meet's results.
+async function mergeRelaysFromEventPages(meetId, results, meetMarkdown, apiKey) {
+  const RELAY_URL_RE = new RegExp(
+    `\\/TrackAndField\\/meet\\/${meetId}\\/results\\/([mf])\\/(\\d+)\\/(4x\\d+m)`,
+    "g",
+  );
+  const referenced = new Map(); // key=`${gender}:${code}` → { gender, code, division }
+  let m;
+  while ((m = RELAY_URL_RE.exec(meetMarkdown)) !== null) {
+    const gender = m[1] === "m" ? "men" : "women";
+    const division = Number(m[2]);
+    const code = m[3];
+    const k = `${gender}:${code}`;
+    if (!referenced.has(k)) referenced.set(k, { gender, code, division });
+  }
+  if (!referenced.size) return;
+
+  for (const { gender, code, division } of referenced.values()) {
+    const url = eventUrl(meetId, gender === "men" ? "m" : "f", code, division);
+    let md;
+    try {
+      md = await scrapeMarkdown(url, { apiKey, waitFor: 3500 });
+    } catch (err) {
+      console.warn(`  relay fetch failed for ${code} (${gender}): ${err.message}`);
+      continue;
+    }
+    const parsed = topEight(parseEventPage(md, { teamId: TEAM_ID, teamName: TEAM_NAME }))
+      .filter((p) => p.kind === "relay");
+    let added = 0;
+    let merged = 0;
+    for (const p of parsed) {
+      const existing = results.find(
+        (r) => r.eventType === "relay" && r.gender === gender && r.eventCode === code && r.place === p.place,
+      );
+      if (existing) {
+        if ((!existing.athletes || existing.athletes.length === 0) && p.athletes?.length) {
+          existing.athletes = p.athletes;
+          existing.athlete = p.athlete;
+          if (p.mark) existing.mark = p.mark;
+          merged++;
+        }
+        continue;
+      }
+      results.push({
+        event: EVENT_LABEL.get(code) ?? code,
+        eventCode: code,
+        gender,
+        eventType: "relay",
+        place: p.place,
+        athlete: p.athlete,
+        athleteId: null,
+        athletes: p.athletes ?? null,
+        mark: p.mark,
+        points: pointsForPlace(p.place),
+        url,
+      });
+      added++;
+    }
+    console.log(`  relay ${code} (${gender}): +${added} added, ${merged} merged`);
+  }
 }
 
 async function main() {
@@ -108,7 +178,19 @@ async function main() {
       continue;
     }
 
-    const results = args.get("refresh-meets-only") && prev ? prev.results : await scrapeMeet(meetId, apiKey);
+    let results;
+    if (args.get("refresh-meets-only") && prev) {
+      results = prev.results;
+    } else {
+      try {
+        results = await scrapeMeet(meetId, apiKey);
+      } catch (err) {
+        // Persist what we already have and move on — don't let one bad meet abort the run.
+        console.warn(`  scrape failed: ${err.message}`);
+        console.warn("  keeping previous results for this meet (if any) and continuing");
+        results = prev?.results ?? [];
+      }
+    }
     existingById.set(meetId, { ...meta, kind, results });
     data.meets = Array.from(existingById.values());
     await saveData(data);

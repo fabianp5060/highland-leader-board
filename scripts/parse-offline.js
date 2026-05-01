@@ -39,6 +39,7 @@ const results = entries.map((p) => ({
   place: p.place,
   athlete: p.athlete,
   athleteId: p.athleteId,
+  athletes: p.athletes ?? null,
   mark: p.mark,
   points: pointsForPlace(p.place),
   url: `https://www.athletic.net/TrackAndField/meet/${p.meetId}/results/${p.gender === "men" ? "m" : "f"}/${p.division}/${p.code}`,

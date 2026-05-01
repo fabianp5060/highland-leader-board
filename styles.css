@@ -407,6 +407,12 @@ td .events {
   font-weight: 700;
 }
 .event-block li .name { color: var(--black); }
+.event-block li .relay-legs {
+  margin-top: 2px;
+  font-size: 0.82rem;
+  color: var(--gray-700);
+}
+.event-block li .relay-legs a { color: var(--gray-700); }
 .event-block li .m {
   color: var(--gray-700);
   text-align: right;

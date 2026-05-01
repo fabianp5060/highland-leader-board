@@ -29,12 +29,22 @@ function renderLeaderboard() {
     .filter((r) => state.gender === "all" || r.gender === state.gender)
     .filter((r) => state.kind === "all" || r.meet.kind === state.kind);
   const byAthlete = new Map();
-  for (const r of results) {
-    const key = r.athleteId ?? r.athlete;
-    if (!byAthlete.has(key)) byAthlete.set(key, { name: r.athlete, id: r.athleteId, points: 0, events: new Set() });
+  const credit = (id, name, points, eventLabel) => {
+    const key = id ?? name;
+    if (!byAthlete.has(key)) byAthlete.set(key, { name, id, points: 0, events: new Set() });
     const a = byAthlete.get(key);
-    a.points += r.points ?? 0;
-    a.events.add(`${r.gender === "women" ? "W" : "M"} ${r.event}`);
+    a.points += points ?? 0;
+    a.events.add(eventLabel);
+  };
+  for (const r of results) {
+    const eventLabel = `${r.gender === "women" ? "W" : "M"} ${r.event}`;
+    // Relay placements credit each contributing leg the same points (e.g. 1st = 10 pts each).
+    // Fall back to the team-level "Highland Relay" pseudo-row only when athletes are unknown.
+    if (r.athletes && r.athletes.length) {
+      for (const a of r.athletes) credit(a.athleteId, a.name, r.points, eventLabel);
+      continue;
+    }
+    credit(r.athleteId, r.athlete, r.points, eventLabel);
   }
   const ranked = [...byAthlete.values()].sort((a, b) => b.points - a.points);
   const meta = document.getElementById("lb-meta");
@@ -104,14 +114,26 @@ function renderMeetDetail() {
     const [gender, event] = key.split("::");
     rows.sort((a, b) => a.place - b.place);
     const items = rows
-      .map(
-        (r) => `<li>
+      .map((r) => {
+        const nameCell = r.athleteId
+          ? `<a href="https://www.athletic.net/athlete/${r.athleteId}/track-and-field" target="_blank" rel="noopener">${escape(r.athlete)}</a>`
+          : escape(r.athlete);
+        const legs = r.athletes?.length
+          ? `<div class="relay-legs">${r.athletes
+              .map((a) =>
+                a.athleteId
+                  ? `<a href="https://www.athletic.net/athlete/${a.athleteId}/track-and-field" target="_blank" rel="noopener">${escape(a.name)}</a>`
+                  : escape(a.name),
+              )
+              .join(", ")}</div>`
+          : "";
+        return `<li>
           <span class="p">${r.place}</span>
-          <span class="name">${r.athleteId ? `<a href="https://www.athletic.net/athlete/${r.athleteId}/track-and-field" target="_blank" rel="noopener">${escape(r.athlete)}</a>` : escape(r.athlete)}</span>
+          <span class="name">${nameCell}${legs}</span>
           <span class="m">${escape(r.mark ?? "")}</span>
           <span class="pts">+${r.points}</span>
-        </li>`,
-      )
+        </li>`;
+      })
       .join("");
     box.insertAdjacentHTML(
       "beforeend",
